@@ -1,0 +1,124 @@
+.Navbar{
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+}
+.nav-menu{
+    display: flex;
+    /* list-style: none; */
+    gap: 36px;
+    color: #494949;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.nav-menu a{
+    cursor: pointer;
+    margin: auto;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.Navbar button{
+    background-color: transparent;
+    font-size: 18px;
+    color: #494949;
+    border: 2px solid orangered;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Navbar button:hover{
+    background: rgba(255, 68, 0, 0.171);
+    color: black;
+}
+.Navbar .active{
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin-bottom: 2px;
+    background-color: orangered;
+    color: black;
+}
+.nav-search{
+    position: relative;
+}
+.dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: orangered;
+    border-radius: 5px;
+    top: -5px;
+    right: -5px;
+}
+.nav-profile{
+    position: relative;
+}
+.nav-drop{
+    position: absolute;
+    display: none;
+    right: -50px;
+    z-index: 1;
+    text-align: center;
+
+}
+.nav-profile:hover .nav-drop{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff2ef;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: 2px solid white;
+    list-style: none;
+
+}
+.nav-profile li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.nav-drop img{
+    width: 20px;
+}
+.nav-drop li:hover{
+    color: orangered;
+}
+@media  (max-width:991px) {
+    .Navbar{
+        padding: 30px 20px;
+    }
+    .Navbar .logo{
+        width: 120px;
+    }
+    .nav-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .nav-right{
+        gap: 20px;
+    }
+    .nav-right img{
+        width: 20px;
+    }
+    .nav-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+@media  (max-width:768px) {
+    .Navbar{
+        padding: 30px 20px;
+    }
+    .nav-menu{
+        display: none;
+    }
+}

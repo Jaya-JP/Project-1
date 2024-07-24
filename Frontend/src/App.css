@@ -1,0 +1,13 @@
+.app .uparr{
+    padding: 8px 10px;
+    background-color: #ee8e11;
+    position: fixed;
+    bottom: 100px;
+    right: 90px;
+    z-index: 100;
+    font-size: 22px;
+    border-radius: 50px ;
+    font-weight: 600;
+    opacity: 0.9;
+    border: 3px solid;
+}

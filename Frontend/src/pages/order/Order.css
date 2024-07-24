@@ -1,0 +1,37 @@
+.order{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+}
+.order-left{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+.order-left .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.mul-fileds{
+    display: flex;
+    gap: 15px;
+}
+.order-left input{
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 14px;
+    padding: 15px;
+    border: 1px solid rgb(236, 230, 221);
+    border-radius: 5px;
+    outline-color: orangered;
+}
+.order-right{
+    width: 100%;
+    max-width: max(40%,500px);
+
+}
+.order .cart-total button{
+    margin-top: 30px;
+}

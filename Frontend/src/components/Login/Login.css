@@ -1,0 +1,65 @@
+.login{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    display: grid;
+}
+.log-pop-container{
+    place-self: center;
+    width: max(30vw,350px);
+    color: #808080;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    animation: fadein 0.8s;
+}
+.log-pop-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.log-pop-title img{
+    width: 16px;
+    cursor: pointer;
+}
+.log-pop-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.log-pop-input input{
+    outline: none;
+    padding: 10px;
+    border: 1.5px solid #c9c9c9;
+    border-radius: 5px;
+}
+.log-pop-container button{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: orangered;
+    font-size: 16px;
+    cursor: pointer;
+}
+.log-pop-cond{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-top: -15px;
+}
+.log-pop-cond input{
+    margin-top: 5px;
+}
+.login p span{
+    color: orangered;
+    font-weight: 600;
+    cursor: pointer;
+}
